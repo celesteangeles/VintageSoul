@@ -1,0 +1,216 @@
+body{
+  width: 100%;
+
+}
+/* COMIENZO BODY*/
+.flex-container{
+    display: flex;  
+    background-image: url(/images/retro-the-poland-roses-vintage-a-bouquet-of-roses-rose.jpg);
+    background-attachment: fixed;
+    background-repeat: round;
+    background-color: #deab90;
+    flex-flow: column;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  hr{
+    height: 5px;
+    background-color: grey;
+  }
+
+  .logo{
+  display:flex;
+  margin:auto;
+  box-shadow: 5px 5px 0px #efd3d7;
+  border-radius: 45px;
+  padding: 22px;   
+  background-color: #e6b8a2;  
+  }
+
+.jean{
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 5px 5px 5px #efd3d7;
+  border-radius: 45px;
+  width: auto;
+  margin: auto;
+}
+
+.ncyBanner{
+  display: flex;
+  height: auto;
+  width: 90%;
+  background-color: rgba(193, 66, 66, 0.2);
+  
+  margin: 5%;
+  justify-content: space-between;
+  border-radius: 5px;
+
+  }
+
+  .cajaA{
+
+    margin:2%;
+    display: flex;
+    flex-direction: row;
+    width: 120%;
+  }
+  .cajaB{
+    margin:2%;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    float: right;
+    margin-top: 20%;
+    margin-right: 5%;
+    
+  }
+
+
+.cita{
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  background-color: #F7E5E1;
+  color:black;
+  text-align: center;
+  border-radius: 5px;
+  width: auto;
+}
+
+.galeria{
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  background-color: #F7E5E1;
+  color:black;
+  text-align: center;
+  border-radius: 5px;
+  width: auto;
+}
+ 
+.ubicacion{
+  margin:3%;
+  padding: 0;
+}
+
+.ubicacion img{
+  width: 50%;
+}
+
+/* SLILDER*/
+.slider {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+  border: double 5px #A44A3F;
+  background-color: white;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+  list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+/*responsive SLIDER*/
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+@media(max-width:768px){
+  .slider li img{
+    height: 100%;
+  }
+
+}@media (max-width:375px){
+  .slider li img{
+    height: 100%;
+    
+  }
+}
+
+@media (max-width:320px){
+  .cita{
+    width: 75%;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 15%;
+  }
+}
+
+@media (max-width:375px){
+  .cita{
+    width: 75%;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 15%;
+  }
+}
+
+@media (max-width:425px){
+  .cita{
+    width: 65%;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 15%;
+  }
+}
+
+@media(max-width:425px){
+  .jean{
+    width:50% ;
+    height: auto;
+  }
+}
+
+@media(max-width:768px){
+  .jean{
+    width:50% ;
+    height: auto;
+  }
+}
+
+@media(min-width:1023px){
+  .cajaA .cajaB{
+    display: flex;
+    flex-direction: column; 
+    width: auto;
+    margin: auto;
+
+  }
+}
+
+@media(min-width:1024px){
+  .ncybanner{
+    display: flex;
+    align-items: center;  
+    height: auto;
+    flex-direction: column;   
+    align-items: center;
+  }
+}

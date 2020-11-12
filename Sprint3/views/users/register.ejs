@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<% - incluide('../partials/head.ejs') %>
+
+ 
+<% - incluide('../partials/header.ejs') %>
+
+<hr>
+
+<body>  <!--CoMIENZA BODY-->
+    <h1>¡ Bienvenido/a !</h1>
+    <div class="contenedor">
+     
+     <!--CAJA1--> 
+        <div class="caja1"> 
+          
+          <h3>Register </h3>
+          
+          <form action="index.html" method="Post">
+          <p> 
+            <label for="nombre"></label>
+            <input class="inputstyle" type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+          </p>
+    
+          <p> 
+            <label for="email"></label>
+            <input class="inputstyle" type="email" name="email" id="email" placeholder="Email">
+          </p>
+          <p> 
+            <label for="email"></label>
+            <input class="inputstyle"  type="email" name="email" id="email" placeholder="Confirme Email">
+          </p>
+          <p> 
+            <label for="telefono"></label>
+            <input  class="inputstyle" type="number" name="telefono" placeholder="Telefono">
+          </p>
+          <p> 
+            <label for="edad"></label>
+            
+            <input type="date" id="start" name="trip-start" class="inputstyle"
+         value="2020-10-22"
+         min="1940-01-01" max="2020-12-31">
+  
+          </p>
+        </form> 
+          <p> 
+            <select class="inputstyle" name="pais">
+           
+            <option>Argentina</option>
+            <option>Uruguay</option>
+            <option>Bolivia</option>
+            <option>Brasil</option>
+            <option>Otro</option>
+          </select>
+          </p>
+  
+          <div class="inputstylebtn" >
+            <p><label for="">Comprador</label>
+            <input type="radio" name="Perfil del usuario"> 
+            <label for="">Vendedor</label> 
+            <input type="radio" name="Perfil del usuario">
+            </p>
+          
+  
+          
+            <p>¿Quieres recibir regularmente su historial de compra?</p>
+            <p><label for="">Si</label>
+            <input type="radio" name="Perfil del usuario"> 
+            <label for="">No</label> 
+            <input type="radio" name="Perfil del usuario">
+            </p>
+          </div>
+          
+          <div class="btncarga1"> 
+            <button class="btncarga" type="submit"> Registrarme </button>
+            <button class="btncarga" type="reset"> Cancelar </button>
+          </div>
+  
+      
+    
+          
+        </div>
+        
+    
+        <!--CAJA2 -->
+        <div class="caja2">
+    
+               <h3>Login</h3>
+    
+          
+            <form action="index.html" method="Post">
+               <p class="stylecaja2"><label for="email"></label>
+                  <input class="inputstyle" type="email" name="email" placeholder="Email">
+               </p>
+    
+               <p class="stylecaja2"><label for="password"></label>
+                  <input class="inputstyle" type="password" name="password" placeholder="Contraseña">
+               </p>       
+         
+          
+          </form>
+          <div class="btncarga1"> 
+            <button class="btncarga" type="submit"> Ingresar </button>
+            <button class="btncarga" type="reset"> Cancelar </button>
+          </div>
+        </div>
+    
+        
+     </div>
+    
+    </div>
+  </body>
+
+                                        <hr>
+<%- incluide ('../partials/footer.ejs') %>

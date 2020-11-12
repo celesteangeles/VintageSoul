@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<% - incluide('../partials/head.ejs') %>
+
+ 
+<% - incluide('../partials/header.ejs') %>
+
+<hr>
+
+<body>  <!--CoMIENZA BODY-->
+
+    <!--CAJA2 -->
+    <div class="productos1">
+     <h1> 
+       Mi Carrito ♡ 
+     </h1>
+         <ul class="nav-menu">
+           
+            <li><a href="#"> Categorias</a></li>
+            <li><a href="#"> Rango de Precios</a></li>
+            <li><a href="#"> Talles</a></li>
+            <li><a href="#"> Envios</a></li>
+            
+         </ul>  
+       </div>
+ <div class="contenedor">
+         <div class="caja2">
+ 
+                 <h3>Vestido verde marino <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="7%" viewBox="0 0 24 24" stroke="currentColor">
+                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                 </svg></h3>
+                 <img class="vestido" src="/images/vestidoverdemarino.jpg">
+                      <div class="btncarga1"> 
+                         <button class="btncarga" type="submit"> Agregar al carrito </button>
+                         <button class="btncarga" type="submit"> Comprar ahora  </button>
+                         <button class="btncarga" type="reset"> Cancelar  </button>
+                      </div>
+         </div>
+  
+    <!--CAJA1--> 
+     <div class="caja1"> 
+           
+    
+            
+     <p class="text"> Precio:$1700</p>
+     <p class="text"> Gastos de Envio: 30%</p>
+     <p class="text"> Total: $2000</p>
+     <label nombre="cantidad">Cantidad:</label>
+     <input  class="stylecant"type="number" nombre="cantidad" placeholder="0">
+
+<div class="nav-btn">
+     <a href="#" class="btn">Ir al Detalle del producto</a>
+</div> 
+                           <hr>
+<div class="nav-btn"> 
+      <a href="#"  class="btnCompra">Finalizar la compra</a>
+</div>  
+
+     </div>
+     <br>
+  <!--COMINEZA PRODUCTOS RELACIONADOS-->
+       
+  <h3 class="textref">Productos relacionados</h3>
+     <div class="news-cards">
+       
+           <div class="productosref">
+             <div>
+               
+           </div>
+             <div>
+                <a href=""><img class="imgref"src="/images/camperaverde.jpg"></a>
+                        <ul>
+                            <li>Campera verde escocesa</li>  
+                            <li>Talle XS</li>
+                            <li>Forrada por dentro</li>
+                            <li>A la cintura estilo crop top</li>
+                            <li>Más estilo imposible 🌹</li>
+                            <a href="#"> Ver más...</a>
+                        </ul> 
+             </div>
+             <div>
+               <a href=""><img class="imgref" src="/images/chanel.jpg"></a>
+                        <ul>
+                           <li>Chanel multiusos</li>
+                           <li>Talle L</li>
+                           <li>Un auténtico Chanel multiusos que no es Chanel, pero si multiusos.👚 </li>
+                           <a href="#">Ver más... </a>
+                        </ul>
+             </div>
+             <div>
+               <a href=""><img  class="imgref"src="/images/pantolincito.jpg"></a>
+                        <ul>
+                          <li>Short elastizado</li>
+                          <li>Talle:40</li>
+                          <li>Bueno, Bonito y Barato 🍒</li>
+                          <li><a href="#"> Ver más... </a></li>
+                        </ul>
+             </div>
+             <div>
+               <a href=""><img class="imgref" src="/images/pantalonybotas.jpg"></a>
+                        <ul>
+                          <li>Combo disponible:</li>
+                          <li>🐒 Pantalón Bershka Talle 40 tiro alto</li>
+                          <li>🐒 Zapatos ultra cómodos Talle 39</li>
+                          <a href="#">Ver más... </a>
+                         </ul>
+             </div>
+           </div>            
+     </div>
+</div>
+</body>
+
+                                        <hr>
+<%- incluide ('../partials/footer.ejs') %>

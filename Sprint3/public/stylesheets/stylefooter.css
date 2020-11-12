@@ -1,0 +1,124 @@
+/*conf de footer*/  
+footer{
+    flex-wrap: wrap;
+    display: flex;
+    background-color:#F19c79;
+    height: 15%;   
+    flex-direction: column;  
+    font-family: 'Antic Slab', serif;  
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 1px;
+  }
+  
+  .container-footer{ 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;     
+    color:black;
+    box-sizing: border-box;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;  
+  }
+  
+  .div-footer{
+    width: 20%; 
+    padding-right: 1%;      
+  }
+  
+  
+  /*conf. responsive*/  
+  
+  @media (max-width: 425px) {
+  footer{
+    display: flex;
+  }
+
+  @media (min-width: 767px){
+    footer{
+      display:flex;
+     flex-direction: column;
+     font-size: 5px;
+    }
+  }
+  
+  .container-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .div-footer{
+    width: 50%;
+    margin-top: 2%;
+  }
+  
+  .newsletter{
+    width: 50%;
+    margin-top: 2%;
+    
+  }
+  
+  #redes{
+    width: 50%;
+    margin-top: 2%;
+  }
+  
+  .redes-icon{
+    display: flex;
+    flex-direction: row;
+    width: 30% ;  
+  }
+  .redes-icon img{
+    margin-right: 1%;
+  }
+  
+  #servicios{
+    width: 50%;
+    margin-top: 2%;
+  }
+  
+  .container-footer{
+    height: auto;
+    width: 100%;
+    display: flex;
+  }
+
+  .ubicacion{
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    margin: auto;
+    height: auto;
+  }
+  }
+
+  .ubicacion img{
+    display: flex;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  @media (min-width: 1024px){
+  #list .ubicacion{
+    font-size: 10px;
+  }
+}
+
+  @media(min-width: 375px){
+    .newsletter{
+      width: 25%;
+      margin-top: 2%;
+    
+    }
+  }
+
+  @media (min-width: 319px){
+    .footer{
+      width:95%;
+      font-size: 8px;
+      display: flex;
+    }
+  }
