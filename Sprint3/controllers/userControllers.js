@@ -1,22 +1,22 @@
 let userController = {
-    'home': function (req,res){
-       res.render('/home.ejs');
+    home: function (req,res){
+       res.render('/home');
     },
-    'formularioDeProducto' : function (req, res){
-       res.render('/formularioDeProducto.ejs');
+    formularioDeProducto: function (req, res){
+       res.render('/formularioDeProducto');
     },
-    'login': function (req, res){
-       res.render ('/login.ejs');
+    login: function (req, res){
+       res.render ('/login');
     },
-    'register' : function (req,res){
-       res.render('/register.ejs');
+    register : function (req,res){
+       res.render('/register');
     },
-    'detalleDeProducto' : function (req, res){
-       res.render ('/detalleDeProducto.ejs');
+    detalleDeProducto : function (req, res){
+       res.render ('/detalleDeProducto');
     },
-    'carritoDeCompras' : function (req, res){
-       res.render ('/carritoDeCompras.ejs');
+    carritoDeCompras : function (req, res){
+       res.render ('/carritoDeCompras');
     }
  };
  
- module.exports = user.Controller;
+ module.exports = userController;
