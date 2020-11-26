@@ -1,0 +1,17 @@
+<%-include('./partials/head')%>
+ 
+  <%-include('./partials/header')%>
+<body>
+
+    <h1> Editando producto: <%=userToEdit.name%></h1>
+
+    <form method="POST" action="/users/edit?_method=PUT">
+    <label for="">Nombre</label>
+    <input type="text" name="nombre" value="<%= userToEdit.name %>">
+
+    <input type="submit" value="Editar">
+    
+    </form>
+    
+</body>
+<%-include('./partials/footer')%>

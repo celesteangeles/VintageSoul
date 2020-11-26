@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: url(/images/cool-background.png);
+    background-attachment:fixed ;
+    background-size: cover;
+}
+
+.contenedor{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    margin: 5% auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    padding: 5px 0;
+    margin: 0 0;
+    font-size: 40px;
+}
+
+.caja1{
+   
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    height: 400px;
+    width: 480px;
+    filter: drop-shadow(5px 5px 10px #444);
+
+}
+
+.caja2{
+   
+    filter: drop-shadow(5px 5px 10px #444);
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    height: 400px;
+	width: 480px;
+    padding: 1em;
+    font-size: 18px;   
+
+}
+
+.stylecaja2{
+    font-size: 18px;
+    font-family: 'Parisienne', cursive;
+  
+}
+.btncarga1{
+    margin: 20px;
+   
+}
+
+
+.btncarga{
+    
+    align-items: center;
+    padding: 10px;
+    flex-direction: row;
+   font-family: 'Parisienne', cursive;
+   font-weight: bolder;
+    margin: 10 0;
+
+}
+
+.btncarga:hover{
+    background-color: #D4E09B;
+    cursor:pointer;
+}
+
+
+
+.inputstyle:hover{
+    cursor: pointer;
+}
+
+h3{
+    font-family: 'Parisienne', cursive;
+    font-size: 30px;
+    
+    
+}
+
+.inputstyle{
+    border: solid 1px grey;
+    border-radius: 15px;
+    width: 75%;
+    padding: 1%;
+    margin: 1%;
+}
+
+.inputstylebtn{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: solid 1px grey;
+    border-radius: 15px;
+    max-width: 75%;
+    font-size:18px;
+    background-color: white;
+    justify-content: center;
+    margin-left: 13%;
+    padding: 2px;
+    font-family:'Parisienne', cursive ;
+    font-weight: bold;
+}
+
+
+/* RESPONSIVE 320PX*/
+
+@media(max-width: 320px){
+    .caja2{
+        width: 100%;
+        margin: 10 10;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 320px){
+    footer{
+        display: block;
+        
+    }
+}
+
+@media(max-width: 320px){
+    .caja1{
+        height: 450px;
+        margin: 10px;
+        
+    }
+}
+
+@media(max-width: 320px){
+    .stylecaja2{
+       font-size: 18px;
+    }
+}
+
+@media(max-width: 320px){
+    .contenedor{
+       width: 100%;
+    }
+}
+
+@media(max-width: 320px){
+    .h1{
+       font-size: 30px;
+    }
+}
+
+
+
+/* RESPONSIVE 375PX*/
+
+@media(max-width: 375px){
+    .contenedor{
+       width: 100%;
+    }
+}
+
+
+@media(max-width: 375px){
+    .caja2{
+        width: 100%;
+        margin: 10 10;
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 375px){
+    .caja1{
+        height: 350px;
+        margin: 5% 0;
+    }
+}
+
+/* RESPONSIVE 425PX*/
+
+
+@media(max-width: 425px){
+    .caja2{
+        width: 100%;
+        margin: 10 10;
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 425px){
+    .caja1{
+        height: 400px;
+      
+    }
+}
+
+/* RESPONSIVE 768*/
+
+@media(max-width: 768px){
+    .caja1{
+        height: 450px;
+    }
+}
+
+
+
+/* RESPONSIVE 1024*/
+
+@media(max-width: 1024px){
+    .caja2{
+        width: 80%;
+        margin: 10 10;
+        font-size: 18px;
+        margin: 25% auto;
+    }
+}
+
+@media(max-width: 1024px){
+    .caja1{
+        
+    
+        width: 100%;
+    }
+}

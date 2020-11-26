@@ -1,0 +1,77 @@
+<%-include('./partials/head')%>
+ 
+  <%-include('./partials/header')%>
+<hr>
+<body>  <!--CoMIENZA BODY-->
+    <h1>¡ Bienvenido/a !</h1>
+    <div class="contenedor">
+     
+     <!--CAJA1--> 
+        <div class="caja1"> 
+          
+          <h3>Register </h3>
+          
+          <form action="/usuarios/__/actualizar?_method=PUT" method="POST">
+         
+            <label for="nombre"></label>
+            <input class="inputstyle" type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+          
+            <label for="email"></label>
+            <input class="inputstyle" type="email" name="email" id="email" placeholder="Email">
+         
+            <label for="email"></label>
+            <input class="inputstyle"  type="email" name="email" id="email" placeholder="Confirme Email">
+         
+            <label for="telefono"></label>
+            <input  class="inputstyle" type="number" name="telefono" placeholder="Telefono">
+          
+            <label for="edad"></label>
+            
+            <input type="date" id="start" name="edad" class="inputstyle"
+         value="2020-10-22"
+         min="1940-01-01" max="2020-12-31">
+  
+          
+        
+           
+            <select class="inputstyle" name="pais">
+           
+            <option>Argentina</option>
+            <option>Uruguay</option>
+            <option>Bolivia</option>
+            <option>Brasil</option>
+            <option>Otro</option>
+          </select>
+          
+  
+          <br>
+            <label class="form" for="">Comprador</label>
+            <input type="radio" name="Perfil del usuario"> 
+            <label class="form" for="">Vendedor</label> 
+            <input type="radio" name="Perfil del usuario">
+            
+          
+  <br>
+          
+            <p class="form">¿Quieres recibir regularmente su historial de compra?</p>
+           <p> <label class="form" for="">Si</label>
+            <input  type="radio" name="Perfil del usuario"> 
+            <label class="form" for="">No</label> 
+            <input  type="radio" name="Perfil del usuario">
+            </p>
+            <br>
+            <button class="btncarga" type="submit"> Registrarme </button>
+            <button class="btncarga" type="reset"> Cancelar </button>
+            
+          </div>
+     
+          
+        </div>
+        
+    
+    </div>
+  </body>
+
+                                        <hr>
+
+                                        <%-include('./partials/footer')%>
