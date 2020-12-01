@@ -5,7 +5,7 @@
   <%-include('./partials/header')%>
     
 
-    <h2>Listado de productos:</h2>
+    <h2 class="h2ul">Listado de productos:</h2>
 <div class="caja1">
     <ul>
       <% for (let i = 0; i < users.length; i++) { %>
@@ -24,12 +24,21 @@
   </div>
 
   <div>
-    <h2> Search<h2>
+    <h2 class="h2ul"> Buscar<h2>
       <form action="/users/search" method="GET">
         <input type="text" name="search">
         <input type="submit" value="search">
       </form>
     
+  </div>
+
+  <div>
+
+    <h2 class="h2ul">Agregar nuevo producto:</h2>
+
+    <form action="/users/formulariodeproducto" method="POST">
+    <button class="btncargauls">Agregar</button>
+    </form>
   </div>
     </body>
 

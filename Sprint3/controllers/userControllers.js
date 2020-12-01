@@ -58,8 +58,10 @@ let userController = {
  create: function(req, res){
     let usuario = {
          nombre: req.body.nombre,
+         email: req.body.email,
          telefono: req.body.telefono,
-         email: req.body.email
+         edad: req.body.edad,
+         pais: req.body.pais
      }
 let usuarioJSON = JSON.stringify(usuario);
 
@@ -83,6 +85,28 @@ fs.writeFileSync('usuario.JSON', usuario.JSON)
 
      res.render("userEdit" , { userToEdit: userToEdit});
  },
+
+ 
+starting: function (req, res){
+
+    let usuariologin = {
+        email: req.body.email,
+        password: req.body.password
+    }
+ let usuariologinJSON = JSON.stringify(usuariologin);
+
+ fs.writeFileSync('usuariologin.JSON', usuariologin.JSON)
+
+
+    res.redirect("/users/list");
+
+ },
+
+ agregarProducto : function (req, res) {
+    res.redirect('/formulariodeproducto')
+ }
+ 
+
 
 };
 

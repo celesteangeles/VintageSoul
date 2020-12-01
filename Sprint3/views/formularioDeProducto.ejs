@@ -9,11 +9,11 @@
 <div class="contenedor">
  
  <!--CAJA1--> 
-    <div class="caja1"> 
+    <div class="caja1fdp"> 
       
       <h3>Datos del Producto</h3>
       
-      <form action="index.html" method="Post">
+      <form action="/users/formulariodeproducto" method="Post">
       <p> 
         <label for="nombre"></label>
         <input class="inputstyle" type="text" name="nombre" id="nombre" placeholder="Nombre del producto">
@@ -22,18 +22,6 @@
       <p> 
         <label for="categoria"></label>
         <input class="inputstyle" type="text" name="categoria" id="categoria" placeholder="Categoria">
-      </p>
-      <p> 
-        <label for="SubCategoria"></label>
-        <input class="inputstyle"  type="text" name="SubCategoria" id="SubCategoria" placeholder="Sub Categoria">
-      </p>
-      <p> 
-        <label for="nombre"></label>
-        <input  class="inputstyle" type="text" name="nombre" id="nombre" placeholder="Marca">
-      </p>
-      <p> 
-        <label for="nombre"></label>
-        <input class="inputstyle" type="text" name="nombre" id="nombre" placeholder="Modelo">
       </p>
       <p> 
         <label for="number"></label>
@@ -47,19 +35,12 @@
         <label for="talle"></label>
         <input class="inputstyle" type="text" name="talle" id="talle" placeholder="Talle" required>
       </p>
-    
-
-      </form> 
-    </div>
-    
-
-    <!--CAJA2 -->
-    <div class="caja2">
+  
 
            <h3>Detalles</h3>
 
       
-        <form action="index.html" method="Post">
+  
            <p class="stylecaja2"><label for="estado"></label>
               <input class="inputstyle" type="text" name="estado" id="estado" placeholder="Estado">
            </p>
@@ -76,7 +57,7 @@
       
            <p class="stylecaja2"><label for ="Promoción">Promoción</label></p>
            <p class="stylecaja2"><input  type="checkbox" name="Promoción" value="Promoción"></p>
-          </form>   
+        
         
           
       <p class="stylecaja2">Descripciones del producto:</p>
@@ -88,17 +69,12 @@
         <p class="stylecaja2">Sube un archivo:</p>
         <p><input class="subirarch" type="file" name="archivosubido">      
         </p>
+
+         <button type="submit" class="btncarga"> Cargar Producto </button>
+      <button type="reset" class="btncarga"> Cancelar </button>
       
       </form>
-      
-      
-    </div>
-
-    <div class="btncarga1"> 
-      <button type="submit" class="btncarga"> Cargar Producto </button>
-      <button type="reset" class="btncarga"> Cancelar </button>
-    </div>
- </div>
+       </div>
 
 </div>
 

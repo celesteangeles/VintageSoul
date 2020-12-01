@@ -5,8 +5,8 @@
     
 }
 
-body{
-    background-image: url(/images/cool-background.png);
+.bodylogin{
+    background-image: url(/images/vintageimg1.jpg);
     background-attachment:fixed ;
     background-size: cover;
 }
@@ -27,6 +27,8 @@ h1{
     padding: 5px 0;
     margin: 0 0;
     font-size: 40px;
+    color: white;
+ 
 }
 
 .caja1{
