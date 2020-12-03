@@ -1,4 +1,4 @@
-const { writeFile, writeFileSync } = require("fs");
+const fs = require('fs');
 
 let userController = {
     'register' : function(req, res){
@@ -6,9 +6,6 @@ let userController = {
     },
     'login' : function(req, res){
         res.render('login')
-    },
-    'listProducts' : function(req, res){
-        res.render('listProducts')
     },
     'carritoDeCompras' : function(req, res){
         res.render('carritoDeCompras')
@@ -23,13 +20,12 @@ let userController = {
     'creacion' : function(req, res){
         res.render('crecion')
     },
+
     'list' : function(req, res){
-        let users =[
-            {id: 1, name: 'Vesito Rojo'},
-            {id: 2, name: 'Zapatos negros'},
-            {id: 3, name: 'Pantalon jean'},
-            {id: 4, name: 'Remera Negra'}
-        ];
+
+        let archivoJSON = fs.readFileSync('usuarios.json', {encoding: 'utf-8'});
+
+        let users = JSON.parse(archivoJSON);
 
         res.render('userList', {'users': users});
     },
@@ -37,22 +33,19 @@ let userController = {
     search: function(req, res){
         let loQueBuscoElUsuario = req.query.search;
 
-        let users =[
-            {id: 1, name: 'Vesito Rojo'},
-            {id: 2, name: 'Zapatos negros'},
-            {id: 3, name: 'Pantalon jean'},
-            {id: 4, name: 'Remera Negra'},
-            {id: 5, name: 'Conjunto promo'}
-        ];
+        let archivoJSON = fs.readFileSync('usuarios.json', {encoding: 'utf-8'});
+
+        let users = JSON.parse(archivoJSON);
 
         let usersResults= [];
+
         for (let i = 0; i < users.length; i++) {
             if (users[i].name.includes(loQueBuscoElUsuario)) {
                 usersResults.push(users[i]);
             }
         }
 
-        res.render('userResults', {usersResults : usersResults});
+        res.render('userResults', {usersResults: usersResults});
  },
 
  create: function(req, res){
@@ -60,15 +53,24 @@ let userController = {
          nombre: req.body.nombre,
          email: req.body.email,
          telefono: req.body.telefono,
-         edad: req.body.edad,
-         pais: req.body.pais
-     }
-let usuarioJSON = JSON.stringify(usuario);
+         edad: req.body.edad
+         }
 
-fs.writeFileSync('usuario.JSON', usuario.JSON)
+      let archivoUsuario = fs.readFileSync('usuarios.json', {encoding: 'utf-8'});
+      let usuarios;
 
+             if (archivoUsuario == "") {
+             usuarios = [];
+            } else {
+             usuarios = JSON.parse(archivoUsuario);
+}
+             usuarios.push(usuario);
+             usuariosJSON = JSON.stringify(usuarios);
 
-     res.redirect("/users/list");
+fs.writeFileSync('usuarios.json', usuariosJSON);
+
+res.redirect("/users/list");
+
  },
 
  edit: function(req,res){
@@ -78,36 +80,15 @@ fs.writeFileSync('usuario.JSON', usuario.JSON)
         {id: 2, name: 'Zapatos negros'},
         {id: 3, name: 'Pantalon jean'},
         {id: 4, name: 'Remera Negra'},
-        {id: 5, name: 'Conjunto promo'}
+        {id: 5, name: 'Conjunto promo'},
+        {id: 6, name: 'Conjunto promo 2'}
     ];
 
     let userToEdit = users[idUser];
 
      res.render("userEdit" , { userToEdit: userToEdit});
- },
-
- 
-starting: function (req, res){
-
-    let usuariologin = {
-        email: req.body.email,
-        password: req.body.password
-    }
- let usuariologinJSON = JSON.stringify(usuariologin);
-
- fs.writeFileSync('usuariologin.JSON', usuariologin.JSON)
-
-
-    res.redirect("/users/list");
-
- },
-
- agregarProducto : function (req, res) {
-    res.redirect('/formulariodeproducto')
  }
  
-
-
 };
 
 module.exports = userController;
