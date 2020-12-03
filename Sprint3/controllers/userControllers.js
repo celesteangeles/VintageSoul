@@ -1,4 +1,6 @@
 const fs = require('fs');
+var archivo = JSON.parse(fs.readFileSync(__dirname+"\..\informacion"));
+
 
 let userController = {
     'register' : function(req, res){
@@ -50,6 +52,7 @@ let userController = {
 
  create: function(req, res){
     let usuario = {
+        id: req.body.id,
          nombre: req.body.nombre,
          email: req.body.email,
          telefono: req.body.telefono,
@@ -58,20 +61,19 @@ let userController = {
 
       let archivoUsuario = fs.readFileSync('usuarios.json', {encoding: 'utf-8'});
       let usuarios;
-
-             if (archivoUsuario == "") {
+          if (archivoUsuario == "") {
              usuarios = [];
             } else {
              usuarios = JSON.parse(archivoUsuario);
 }
-             usuarios.push(usuario);
-             usuariosJSON = JSON.stringify(usuarios);
+usuarios.push(usuario);
+usuariosJSON = JSON.stringify(usuarios);
 
 fs.writeFileSync('usuarios.json', usuariosJSON);
 
 res.redirect("/users/list");
 
- },
+},
 
  edit: function(req,res){
      let idUser = req.params.idUser;
@@ -87,6 +89,15 @@ res.redirect("/users/list");
     let userToEdit = users[idUser];
 
      res.render("userEdit" , { userToEdit: userToEdit});
+ },
+
+ create2: function(req,res,next){
+     res.render('/users/formulariodeproducto');
+ },
+ store: function(req,res,next){
+     let product = {
+         image: req.files[0].filename
+     }
  }
  
 };

@@ -11,8 +11,8 @@
           
           <h3>Register </h3>
           
-          <form action="/usuarios/__/actualizar?_method=PUT" method="POST">
-         
+          <form action="/users/list" method="POST">
+           
             <label for="nombre"></label>
             <input class="inputstyle" type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
           
@@ -20,36 +20,19 @@
             <input class="inputstyle" type="email" name="email" id="email" placeholder="Email">
          
             <label for="telefono"></label>
-            <input  class="inputstyle" type="number" name="telefono" placeholder="Telefono">
+            <input  class="inputstyle" type="telefono" name="telefono" placeholder="Telefono">
           
             <label for="edad"></label>
-            
-            <input type="date" id="start" name="edad" class="inputstyle"
-         value="2020-10-22"
-         min="1940-01-01" max="2020-12-31">
-         
-          <br>
-            <label class="form" for="">Comprador</label>
-            <input type="radio" name="Comprador/Vendedor"> 
-            <label class="form" for="">Vendedor</label> 
-            <input type="radio" name="Comprador/Vendedor">
+            <input type="date" id="start" name="edad" class="inputstyle" value="2020-10-22" min="1940-01-01" max="2020-12-31">
+                          
+       <br>
+            <input type="submit" value="Registrarme">
           
-          <br>
-         
-            <p class="form">¿Quieres recibir regularmente su historial de compra?</p>
-           <label class="form" for="">Si</label>
-            <input  type="radio" name="Perfil del usuario"> 
-            <label class="form" for="">No</label> 
-            <input  type="radio" name="Perfil del usuario">
-            
-         
-            <br>
-       
-              <button type="submit"> Registrarme </button>
               
-                <button type="delete"> Borrar </button>
-          
+            <input type="reset" value="Borrar">
+      
               </form>
+            
           </div>
      
           

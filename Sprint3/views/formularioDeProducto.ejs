@@ -13,7 +13,10 @@
       
       <h3>Datos del Producto</h3>
       
-      <form action="/users/formulariodeproducto" method="Post">
+      <form action="/users/formulariodeproducto" method="Post" enctype="multipart/form-data">
+
+        <label for="id">ID:</label>
+        <input type="text" name="id">
       <p> 
         <label for="nombre"></label>
         <input class="inputstyle" type="text" name="nombre" id="nombre" placeholder="Nombre del producto">
@@ -67,7 +70,7 @@
       <form action="../../form-result.php" method="post" enctype="multipart/form-data" target="_blank">  
 
         <p class="stylecaja2">Sube un archivo:</p>
-        <p><input class="subirarch" type="file" name="archivosubido">      
+        <p><input class="subirarch" type="file[]" name="archivosubido" multiple>      
         </p>
 
          <button type="submit" class="btncarga"> Cargar Producto </button>
