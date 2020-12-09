@@ -33,8 +33,9 @@ router.get('/creacion', function(req, res) {
   res.render('creacion');
 });
 
-
-
+router.get('/formulario', function (req,res){
+  res.render('formulario');
+})
 
 
 module.exports = router;

@@ -1,8 +1,9 @@
 var express = require('express');
 var router = express.Router();
-const userController = require('../controllers/userControllers');
+const userController = require('../controllers/userController');
+var fs = require ('fs')
 
-//multer y path//
+//Multer y Path (carga de imagenes) //
 
 const multer = require('multer');
 const path = require('path');
@@ -18,26 +19,33 @@ var storage = multer.diskStorage({
 var upload = multer({storage:storage});
 
 
-/* GET users listing. */
+/* RUTAS GET, POST, DELETE, PUT  */
 
+/*REGISTRARSE*/
 
-router.get('/register', userController.register);
+router.get('/register',userController.register);
 
-router.post('/register', userController.create);
+router.post('/register',userController.create);
 
+/*loguearse*/
 
 
 router.get('/login', userController.login);
+router.post('/login', userController.sendLogin);
+
+/* FORMULARIO DE PRODUCTOS; CREAR PRODUCTO NUEVO*/
+router.get('/formulariodeproducto', userController.formulariodeproducto);
+router.post('/formulariodeproducto',userController.create);
+
+
+/*LISTA DE PRODUCTOS VISTA ADM*/
 
 router.get('/list', userController.list);
 
-router.get('/search', userController.search);
 
+/*BUSCAR Y EDITAR PRODUCTOS EN LISTADO POR ADM*/ 
 
-router.get('/formulariodeproducto',userController.create2)
-router.post('/formulariodeproducto', upload.any(),userController.store);
-
-router.get('/edit/:idUser', userController.edit);
+router.post('/search', userController.search);
 
 router.put('/edit/:idUser', userController.edit);
 

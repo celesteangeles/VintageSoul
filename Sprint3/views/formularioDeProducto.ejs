@@ -13,7 +13,7 @@
       
       <h3>Datos del Producto</h3>
       
-      <form action="/users/formulariodeproducto" method="Post" enctype="multipart/form-data">
+      <form action="formulariodeproducto" method="POST" enctype="multipart/form-data">
 
         <label for="id">ID:</label>
         <input type="text" name="id">
@@ -41,25 +41,15 @@
   
 
            <h3>Detalles</h3>
-
-      
-  
-           <p class="stylecaja2"><label for="estado"></label>
-              <input class="inputstyle" type="text" name="estado" id="estado" placeholder="Estado">
-           </p>
-
-           <p class="stylecaja2"><label for="number"></label>
-              <input class="inputstyle" type="number" name="number" id="number" placeholder="Precio con descuento">
-           </p>
-            
+           
            <p class="stylecaja2"><label for ="Envio gratis">Envio gratis</label></p>
-           <p class="stylecaja2"><input type="checkbox" name="Envio gratis" value="Envio gratis" required></p>
+           <p class="stylecaja2"><input type="checkbox" name="envioGratis" value="Envio gratis" required></p>
       
            <p class="stylecaja2"><label for ="oferta">Oferta</label></p>
            <p class="stylecaja2"><input type="checkbox" name="oferta" value="Oferta"></p>
       
            <p class="stylecaja2"><label for ="Promoción">Promoción</label></p>
-           <p class="stylecaja2"><input  type="checkbox" name="Promoción" value="Promoción"></p>
+           <p class="stylecaja2"><input  type="checkbox" name="promocion" value="Promoción"></p>
         
         
           
@@ -69,12 +59,12 @@
       <textarea name="mensaje"  placeholder="Escribe la descripción del producto"></textarea>
       <form action="../../form-result.php" method="post" enctype="multipart/form-data" target="_blank">  
 
-        <p class="stylecaja2">Sube un archivo:</p>
-        <p><input class="subirarch" type="file[]" name="archivosubido" multiple>      
+        <p class="stylecaja2">Sube una imagen:</p>
+        <p><input class="subirarch" type="file[]" id="id" name="imgsubido" multiple accept="image/*">      
         </p>
 
-         <button type="submit" class="btncarga"> Cargar Producto </button>
-      <button type="reset" class="btncarga"> Cancelar </button>
+         <input type= "submit" class="btncarga" value=" Cargar Producto">
+      <input type="reset" class="btncarga" value="Cancelar"> 
       
       </form>
        </div>
