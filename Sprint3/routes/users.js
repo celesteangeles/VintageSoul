@@ -23,15 +23,20 @@ var upload = multer({storage:storage});
 
 /*REGISTRARSE*/
 
-router.get('/register',userController.register);
-
-router.post('/register',userController.create);
+router.get('/register',userController.create);
+router.post('/register',userController.store);
 
 /*loguearse*/
 
 
 router.get('/login', userController.login);
 router.post('/login', userController.sendLogin);
+
+/* VISTA CONTACTOS*/
+router.get('/contactos', userController.contactos)
+
+router.get('/contactos/:usuarioPerfil', userController.usuarioPerfil);
+router.post('/contactos/mensajes', userController.sendMenssage)
 
 /* FORMULARIO DE PRODUCTOS; CREAR PRODUCTO NUEVO*/
 router.get('/formulariodeproducto', userController.formulariodeproducto);
@@ -41,6 +46,8 @@ router.post('/formulariodeproducto',userController.create);
 /*LISTA DE PRODUCTOS VISTA ADM*/
 
 router.get('/list', userController.list);
+
+
 
 
 /*BUSCAR Y EDITAR PRODUCTOS EN LISTADO POR ADM*/ 

@@ -1,69 +1,61 @@
-<%-include('./partials/head')%>
- 
-<%-include('./partials/header')%>
+<%-include('../partials/head')%>
+<%-include('../partials/header')%>
 
 <hr>
 
-<body class="bodycdc">  <!--CoMIENZA BODY-->
+<body class="bodyddp">  <!--CoMIENZA BODY-->
 
     <!--CAJA2 -->
-    <div class="productos1">
-     <h1 class="h1cdc"> 
-       Mi Carrito ♡ 
-     </h1>
-         <ul class="nav-menu">
-           
-            <li><a href="#"> Categorias</a></li>
-            <li><a href="#"> Rango de Precios</a></li>
-            <li><a href="#"> Talles</a></li>
-            <li><a href="#"> Envios</a></li>
-            
-         </ul>  
-       </div>
+ <h1 class="h1ddp"> Detalle de Producto:</h1>
  <div class="contenedor">
-         <div class="caja2cdc">
+         <div class="caja2ddp">
  
-                 <h3 class="h3cdc">Vestido verde marino: 
+                 <h3>Vestido verde marino <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="7%" viewBox="0 0 24 24" stroke="currentColor">
                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                  </svg></h3>
-                 <img class="vestidocdc" src="/images/vestidoverdemarino.jpg">
-                      <div class="nav-btn"> 
-                    
-                    
-                         <button class="btncarga" type="reset"> Cancelar  </button>
+                 <img class="vestidoddp" src="/images/vestidoverdemarino.jpg">
+                      <div class="btncarga1"> 
+                         <button class="btncarga" type="submit"> Agregar al carrito </button>
+                         <button class="btncarga" type="reset"> Comprar ahora  </button>
                       </div>
          </div>
   
     <!--CAJA1--> 
-     <div class="caja1cdc"> 
-           
-    
-            
-     <p class="text"> Precio:$1700</p>
-     <label nombre="cantidad">Cantidad:</label>
-     <input  class="stylecant"type="number" nombre="cantidad" placeholder="0">
+     <div class="caja1ddp"> 
+            <div class="textref">
+       <p class="descstyle"> 
+         Precio: $1700
+       </p>
+       <p class="descstyle"> 
+         Talle: L
+       </p>
+       <p class="descstyle"> 
+        Tela: Razo
+       </p>
+       </p>      
+       <p class="descstyle"> 
+         Vestido verde marino, elegante y comodo.
+       </p>
 
-<div class="nav-btn">
-     <a href="#" class="btnCompra">Ir al Detalle del producto</a>
-</div> 
-                           <hr>
-<div class="nav-btn"> 
-      <a href="#"  class="btnCompra">Finalizar la compra</a>
-</div>  
+       <p class="descstyle"> 
+        Devolución gratis: Tenes 30 dias desde que lo recibís.
+        
+      </p>
+      </div>
 
      </div>
-     <br>
+     
   <!--COMINEZA PRODUCTOS RELACIONADOS-->
        
-  <h3 class="textref">Productos relacionados</h3>
+  <h3 class="textref">Tal vez te interese...</h3>
      <div class="news-cards">
        
            <div class="productosref">
              <div>
                
            </div>
-             <div img-new-cards>
-                <a href=""><img class="img-new-cards2" src="/images/camperaverde.jpg"></a>
+             <div class="styledesc">
+                <a href=""><img class="imgref"src="/images/camperaverde.jpg"></a>
                         <ul>
                             <li>Campera verde escocesa</li>  
                             <li>Talle XS</li>
@@ -73,8 +65,8 @@
                             <a href="#"> Ver más...</a>
                         </ul> 
              </div>
-             <div>
-               <a href=""><img class="img-new-cards2" src="/images/chanel.jpg"></a>
+             <div class="styledesc">
+               <a href=""><img class="imgref" src="/images/chanel.jpg"></a>
                         <ul>
                            <li>Chanel multiusos</li>
                            <li>Talle L</li>
@@ -82,8 +74,8 @@
                            <a href="#">Ver más... </a>
                         </ul>
              </div>
-             <div>
-               <a href=""><img  class="img-new-cards2" src="/images/pantolincito.jpg"></a>
+             <div class="styledesc">
+               <a href=""><img  class="imgref"src="/images/pantolincito.jpg"></a>
                         <ul>
                           <li>Short elastizado</li>
                           <li>Talle:40</li>
@@ -91,8 +83,8 @@
                           <li><a href="#"> Ver más... </a></li>
                         </ul>
              </div>
-             <div>
-               <a href=""><img class="img-new-cards2" src="/images/pantalonybotas.jpg"></a>
+             <div class="styledesc">
+               <a href=""><img class="imgref" src="/images/pantalonybotas.jpg"></a>
                         <ul>
                           <li>Combo disponible:</li>
                           <li>🐒 Pantalón Bershka Talle 40 tiro alto</li>
@@ -106,4 +98,4 @@
 </body>
 
                                         <hr>
-                                        <%-include('./partials/footer')%>
+  <%-include('../partials/footer')%>

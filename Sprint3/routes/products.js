@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const productControllers = require('../controllers/productControllers');
+const productsController = require('../controllers/productsController');
 var fs = require ('fs')
 
 //Multer y Path (carga de imagenes) //
@@ -18,21 +18,31 @@ var storage = multer.diskStorage({
 
 var upload = multer({storage:storage});
 
-/* RUTAS GET, POST, DELETE, PUT */
+/* ABM*/
+
+/*ALTA FORMULARIO DE PRODUCTOS*/
+router.get('/create', productsController.create); 
+router.post('/create', productsController.store); 
+
+/* EDITO UN PRODUCTO*/
+router.get('/edit/:id_product', productsController.edit);
+router.post('/edit/:id_product', productsController.update);
+
+
+/*ELIMINO UN PRODUCTO*/
 
 /* CARRITO DE COMPRAS*/
-router.get('/carritoDeCompras', productControllers.carritoDeCompras);
+
 
 /*DETALLE DE PRODUCTOS*/ 
 
-router.get('/detalleDeProducto', productControllers.detalleDeProducto);
+
 
 
 /* EDITAR LISTADO DE PRODUCTOS*/
 
 
-router.get('/edit/:nombre/:precio/:talle/', productControllers.edit);
-router.post('/edit/:nombre/:precio/:talle/', productControllers.edit);
+
 
 
 module.exports = router;

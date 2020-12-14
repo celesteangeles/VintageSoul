@@ -1,6 +1,6 @@
-<%-include('./partials/head')%>
+<%-include('../partials/head')%>
  
-  <%-include('./partials/header')%>
+  <%-include('../partials/header')%>
 <hr>
 <body class="bodylogin">  <!--CoMIENZA BODY-->
     <h1>¡ Bienvenido/a !</h1>
@@ -15,21 +15,20 @@
            
             <label for="nombre"></label>
             <input class="inputstyle" type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
-          
             <label for="email"></label>
             <input class="inputstyle" type="email" name="email" id="email" placeholder="Email">
-         
+            <label for="password"></label>
+            <input class="inputstyle" type="password" name="password" id="password" placeholder="Contraseña">
             <label for="telefono"></label>
             <input  class="inputstyle" type="telefono" name="telefono" placeholder="Telefono">
-          
             <label for="edad"></label>
             <input type="date" id="start" name="edad" class="inputstyle" value="2020-10-22" min="1940-01-01" max="2020-12-31">
                           
        <br>
-            <input type="submit" value="Registrarme">
+            <button type="submit" value="Registrarme">Registrarme</button>
           
               
-            <input type="reset" value="Borrar">
+            <button type="reset" value="Borrar">Borrar</button>
       
               </form>
             
@@ -44,4 +43,4 @@
 
                                         <hr>
 
-                                        <%-include('./partials/footer')%>
+                                        <%-include('../partials/footer')%>

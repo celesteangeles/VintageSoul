@@ -57,7 +57,12 @@ body{
   justify-content: space-between;
   border-radius: 5px;
 }
-
+.createstyle{
+  font-family: 'Times New Roman', Times, serif;
+  font-size:18px;
+  color: #F7E5E1;
+  background-color: darkmagenta;
+}
 .cajaA{
     margin:2%;
     display: flex;

@@ -1,8 +1,8 @@
 <body>  <!--CoMIENZA BODY-->
     <div class="cajauser">
-    <%-include('./partials/head')%>
+    <%-include('../partials/head')%>
     <link rel="stylesheet" href="/stylesheets/styleFormularioDeProducto.css">
-  <%-include('./partials/header')%>
+  <%-include('../partials/header')%>
     
 
     <h2 class="h2ul">Listado de productos:</h2>
@@ -26,9 +26,10 @@
 
   <div>
     <h2 class="h2ul"> Buscar<h2>
-      <form action="/users/search" method="GET">
-        <input type="text" name="search">
-        <input type="submit" value="search">
+      
+      <form action="/buscador" method="GET">
+        <input type="text" name="busqueda">
+        <button type="submit" value="busqueda">Buscar</button>
       </form>
     
   </div>
@@ -43,4 +44,4 @@
   </div>
     </body>
 
-  <%-include('./partials/footer')%>
+  <%-include('../partials/footer')%>
