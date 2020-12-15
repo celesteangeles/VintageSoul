@@ -15,13 +15,11 @@
       
       <form action="/products/create" method="POST" >
 
-    ID:
-    <input type="text" class="inputstyle" name="id_product">
- 
+    <label for="product_id">ID:</label>
+    <input type="text" class="inputstyle" name="product_id">
     <label for="product_name">Nombre:</label>
     <input class="inputstyle" type="text" name="product_name" id="product_name" >
-    <label for= "product_category" >Categoria:</label>
-    <input class="inputstyle" type="text" name="product_category">
+    
     <label for="product_price" >Precio:</label>
     <input class="inputstyle" type="number" name="product_price" required>
     <label for= "product_quantity">Cantidad:</label>     
@@ -29,20 +27,9 @@
     <label for="product_waist">Talle:</label>
     <input class="inputstyle" type="text" name="product_waist" required>
     <label for="product_detail">Detalle de producto:</label>
-    <input class="inputstyle" type="text" name="product_detail" required>
+    <input class="inputstyle" type="text" name="product_description" required>
     
-    
-    <h3>Detalles</h3>
            
-    <p class="stylecaja2"><label for ="product_freeshipping">Envio gratis</label></p>
-    <p class="stylecaja2"><input type="checkbox" name="product_freeshipping" value="Envio gratis" required></p>
-      
-    <p class="stylecaja2"><label for ="product_offer">Oferta</label></p>
-    <p class="stylecaja2"><input type="checkbox" name="product_offer" value="Oferta"></p>
-      
-    <p class="stylecaja2"><label for ="product_promotion">Promoción</label></p>
-    <p class="stylecaja2"><input  type="checkbox" name="product_promotion" value="Promoción"></p>
-        
        <button type="submit" class="inputstyle"> Cargar producto</button>
        <button type="reset" class="inputstyle"> Cancelar</button>
 

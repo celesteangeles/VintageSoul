@@ -25,13 +25,16 @@ router.get('/create', productsController.create);
 router.post('/create', productsController.store); 
 
 /* EDITO UN PRODUCTO*/
-router.get('/edit/:id_product', productsController.edit);
-router.post('/edit/:id_product', productsController.update);
+router.get('/edit/:product_id', productsController.edit);
+router.post('/edit/:product_id', productsController.update);
 
 
 /*ELIMINO UN PRODUCTO*/
+router.get('/destroy/:product_id', productsController.destroy);
 
-/* CARRITO DE COMPRAS*/
+/* LISTAR LOS PRODUCTOS*/
+
+router.get('/list', productsController.list);
 
 
 /*DETALLE DE PRODUCTOS*/ 
