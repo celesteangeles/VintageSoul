@@ -25,15 +25,17 @@ h1{
 }
 
 .h2ul{
-    color: black;
-    text-decoration-line: underline;
-    background-color: white;
-    width: 25%;
-    text-align: center;
-    margin: auto;
-    border-radius: 50%;
-    padding: 1%;
-    margin-top: 4%;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+color:#b5838d; 
+font-size: 30px; 
+font-weight: 400; 
+text-align: center; 
+background: white; 
+overflow: hidden; 
+padding: 20px; 
+text-decoration-line: underline;
+
+
 }
 
 .caja1fdp{
@@ -42,10 +44,63 @@ h1{
     background-color: white;
     text-align: center;
     border-radius: 5px;
-    height: 700px;
+    height: 500px;
     width: 480px;
     filter: drop-shadow(5px 5px 10px #444);
    
+
+}
+
+.caja1list{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: #b5838d; 
+    font-size: 20px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: white; 
+    
+    overflow: hidden; 
+    padding: 20px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid #b5838d;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.caja2list{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: #b5838d; 
+    font-size: 18px;  
+    background: white; 
+    margin: 0 0 25px;
+    border: 2px solid #b5838d;
+   display: flex;
+    width: 100%;
+    margin: auto;
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+
+
+.textlist{
+font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+color:#b5838d; 
+font-size: 18px; 
+font-weight: 400; 
+background: white; 
+overflow: hidden; 
+padding: auto;
+align-items:center; 
+justify-content: space-around;
+flex-direction: column;
+width: 30px;
 
 }
 

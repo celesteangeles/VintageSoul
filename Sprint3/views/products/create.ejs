@@ -15,23 +15,26 @@
       
       <form action="/products/create" method="POST" >
 
-    <label for="product_id">ID:</label>
+    <label>ID:</label>
     <input type="text" class="inputstyle" name="product_id">
     <label for="product_name">Nombre:</label>
-    <input class="inputstyle" type="text" name="product_name" id="product_name" >
-    
+    <input class="inputstyle" type="text" name="product_name">
     <label for="product_price" >Precio:</label>
     <input class="inputstyle" type="number" name="product_price" required>
-    <label for= "product_quantity">Cantidad:</label>     
-    <input class="inputstyle" type="number" name="product_quantity">
     <label for="product_waist">Talle:</label>
     <input class="inputstyle" type="text" name="product_waist" required>
+    <label for="product_category">Categoría:</label>
+    <input class="inputstyle" type="text" name="product_category" required>
+    <label for="product_waist">Cantidad:</label>
+    <input class="inputstyle" type="number" name="product_quantity">
     <label for="product_detail">Detalle de producto:</label>
     <input class="inputstyle" type="text" name="product_description" required>
     
+    
+    
            
-       <button type="submit" class="inputstyle"> Cargar producto</button>
-       <button type="reset" class="inputstyle"> Cancelar</button>
+       <button type="submit" class="inputstyle">Cargar producto</button>
+       <button type="reset" class="inputstyle">Cancelar</button>
 
          
       </div>

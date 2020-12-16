@@ -1,0 +1,30 @@
+[
+    {
+        "user_name": "celeste angeles",
+        "user_email": "celeste@gmail",
+        "user_password": "asdasdsd",
+        "user_phone": "15566541",
+        "user_age": null
+    },
+    {
+        "user_name": "analia",
+        "user_email": "analia@analia",
+        "user_password": "analisa",
+        "user_phone": "6565456565",
+        "user_age": null
+    },
+    {
+        "user_name": "celeste",
+        "user_email": "celeste@gmail",
+        "user_password": "sadasdsd",
+        "user_phone": "15566541",
+        "user_age": null
+    },
+    {
+        "user_name": "celeste angeles",
+        "user_email": "celeste@gmail",
+        "user_password": "sdasdsad",
+        "user_phone": "15566541",
+        "user_age": null
+    }
+]

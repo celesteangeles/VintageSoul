@@ -1,47 +1,47 @@
 <body>  <!--CoMIENZA BODY-->
-    <div class="cajauser">
+    
     <%-include('../partials/head')%>
     <link rel="stylesheet" href="/stylesheets/styleFormularioDeProducto.css">
-  <%-include('../partials/header')%>
+   <%-include('../partials/header')%>
     
 
     <h2 class="h2ul">Listado de productos:</h2>
-<div class="caja1">
-    <ul>
-      <% for (let i = 0; i < users.length; i++) { %>
-<li>
-  <a href="/users/detail/<%= users[i].id %>" ><%= users[i].nombre %></a>
 
-  <form method="POST" action="/users/edit/?_method=PUT">  
-    <button> Editar </button>
-    </form>
-    <form method="POST" action="/users/delete/<%= users[i].id %>?_method=DELETE">  
-      <button type="submit"> Borrar </button>
-    </form>
- 
-</li>
+   <div class="caja1list">
+     <div clas="textlist"> ID</div>
+     <div clas="textlist">Nombre</div>
+     <div clas="textlist">Precio</div>
+     <div clas="textlist">Talle</div>
+     <div clas="textlist">Categoría</div>
+     <div clas="textlist">Cantidad</div>
+     <div clas="textlist">Detalle de producto</div> 
+     <div clas="textlist">Acciones</div> 
+   </div>
+
+   <% for(var i = 0; i < products.length; i++){ %>
+   
+    <div class="caja2list" >
+     
+      <div clas="textlist"><%=products[i].product_id%></div>
+      <div clas="textlist"><%=products[i].product_name%></div>
+      <div clas="textlist"><%=products[i].product_price%></div>
+      <div clas="textlist"><%=products[i].product_waist%></div>
+      <div clas="textlist"><%=products[i].product_category%></div>
+      <div clas="textlist"><%=products[i].product_quantity%></div>
+      <div clas="textlist"><%=products[i].product_description%></div>
+      <div clas="textlist"><a href="/products/edit/<%= products[i].product_id%>">Editar</a>
+      <a href="/products/destroy/<%= products[i].product_id%>">Eliminar</a></div>
+    </div>
+
      <% } %>
-    </ul>
-  </div>
+   
 
-  <div>
-    <h2 class="h2ul"> Buscar<h2>
-      
-      <form action="/buscador" method="GET">
-        <input type="text" name="busqueda">
-        <button type="submit" value="busqueda">Buscar</button>
-      </form>
-    
-  </div>
+     <div class="caja2list" >
+       <h3><a href="/products/create"> Agregar nuevo producto</a></h3>
+     </div>
+  
 
-  <div>
+</body>
 
-    <h2 class="h2ul">Agregar nuevo producto:</h2>
 
-    <form action="/users/formulariodeproducto" method="POST">
-    <button class="btncargauls">Agregar</button>
-    </form>
-  </div>
-    </body>
-
-  <%-include('../partials/footer')%>
+<%-include('../partials/footer')%>

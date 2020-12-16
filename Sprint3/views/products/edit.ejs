@@ -1,34 +1,35 @@
 <%-include('../partials/head')%>
  
-<%-include('../partials/header')%>
+  <%-include('../partials/header')%>
 
 <hr>
 
 <body>  <!--CoMIENZA BODY-->
-<h1>Edicion de producto: <%= product.product_id%> </h1>
+<h1>¡ Bienvenido Vendedor/a !</h1>
 <div class="contenedor">
  
  <!--CAJA1--> 
     <div class="caja1fdp"> 
       
-      <h3>Datos del Producto</h3>
+      <h3>Datos del Producto ID: <%= product.product_id%></h3>
       
-      <form action="/products/edit/ <%= product.product_id%>" method="POST" >
+      <form action="/products/edit/<%= product.product_id %>" method="POST" >
 
-  
+    
     <label for="product_name">Nombre:</label>
-    <input class="inputstyle" type="text" name="product_name" value="<%=product.product_name%>" >
+    <input class="inputstyle" type="text" name="product_name" value="<%= product.product_name%>">
     <label for="product_price" >Precio:</label>
-    <input class="inputstyle" type="number" name="product_price" required value="<%=product.product_price%>">
-    <label for= "product_quantity">Cantidad:</label>     
-    <input class="inputstyle" type="number" name="product_quantity" value="<%=product.product_quantity%>">
+    <input class="inputstyle" type="number" name="product_price" value="<%= product.product_price%>">
     <label for="product_waist">Talle:</label>
-    <input class="inputstyle" type="text" name="product_waist" required value="<%=product.product_waist%>">
-    <label for="product_description">Detalle de producto:</label>
-    <input class="inputstyle" type="text" name="product_description" required value="<%=product.product_description%>">
+    <input class="inputstyle" type="text" name="product_waist" value="<%= product.product_waist%>">
+    <label for="product_category">Categoría:</label>
+    <input class="inputstyle" type="text" name="product_category" value="<%= product.product_category%>">
+    <label for="product_waist">Cantidad:</label>
+    <input class="inputstyle" type="number" name="product_quantity" value="<%= product.product_quantity%>">
+    <label for="product_detail">Detalle de producto:</label>
+    <input class="inputstyle" type="text" name="product_description" value="<%= product.product_description%>">
     
-    
-            
+           
        <button type="submit" class="inputstyle"> Guardar Cambios</button>
        <button type="reset" class="inputstyle"> Cancelar</button>
 
@@ -39,6 +40,7 @@
        
 
 </div>
+
 
 </body>
 
