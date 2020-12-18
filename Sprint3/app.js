@@ -7,7 +7,7 @@ var fs = require('fs');
 
 /*PUT Y DELETE FORMULARIO*/
 var methodOverride = require('method-override');
-
+var session = require('express-session');
 /*rutas*/ 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(session({secret: ' Secreto.'}));
 app.use(methodOverride("_method"));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

@@ -10,6 +10,7 @@ store: function (req,res,next){
 //guarda los datos en el archivo .json
 //tomo producto como objeto y paso a numero los necesarios tambien se puede multiplicar 
    let newProduct = req.body;
+    newProduct.product_image = req.files[0].filename;
     newProduct.product_id = Number(req.body.product_id);
     newProduct.product_price = Number(req.body.product_price);
     newProduct.product_quantity = Number(req.body.product_quantity);

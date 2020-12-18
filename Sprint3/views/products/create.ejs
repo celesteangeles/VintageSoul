@@ -13,7 +13,7 @@
       
       <h3>Datos del Producto</h3>
       
-      <form action="/products/create" method="POST" >
+  <form action="/products/create" method="POST" enctype="multipart/form-data" >
 
     <label>ID:</label>
     <input type="text" class="inputstyle" name="product_id">
@@ -29,16 +29,16 @@
     <input class="inputstyle" type="number" name="product_quantity">
     <label for="product_detail">Detalle de producto:</label>
     <input class="inputstyle" type="text" name="product_description" required>
+    <label for="product_image"></label>
+    <input  class="inputstyle" type="file" name="product_image" accept="image/png, image/jpeg">
     
-    
-    
-           
+               
        <button type="submit" class="inputstyle">Cargar producto</button>
        <button type="reset" class="inputstyle">Cancelar</button>
 
          
       </div>
-      </form>
+  </form>
        </div>
        
 

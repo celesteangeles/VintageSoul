@@ -1,1 +1,44 @@
-[{"product_id":1,"product_name":"campera azul","product_price":"500","product_waist":"s","product_category":"Nueva","product_quantity":"1","product_description":"Muy comoda","stock":0},{"product_id":2,"product_name":"Pantalon","product_price":2500,"product_waist":"XL","product_category":"Usado","product_quantity":1,"product_description":"Comodo","stock":0},{"product_id":54,"product_name":"remeron","product_price":600,"product_waist":"s","product_category":"nueva","product_quantity":5,"product_description":"re linda","stock":0}]
+[
+    {
+        "product_id": 1,
+        "product_name": "campera azul",
+        "product_price": "500",
+        "product_waist": "s",
+        "product_category": "Nueva",
+        "product_quantity": "1",
+        "product_description": "Muy comoda",
+        "stock": 0
+    },
+    {
+        "product_id": 2,
+        "product_name": "pollera",
+        "product_price": "2500",
+        "product_waist": "s",
+        "product_category": "Usado",
+        "product_quantity": "1",
+        "product_description": "Comodo",
+        "stock": 0
+    },
+    {
+        "product_id": 9999,
+        "product_name": "Pantalon",
+        "product_price": 4,
+        "product_waist": "L",
+        "product_category": "Nuevo",
+        "product_quantity": 18,
+        "product_description": "COMODA",
+        "product_image": "product_image-1608169974385.jpg",
+        "stock": 0
+    },
+    {
+        "product_id": 6,
+        "product_name": "Pantalon",
+        "product_price": "2500",
+        "product_waist": "L",
+        "product_category": "Nueva",
+        "product_quantity": "1",
+        "product_description": "Comodo y lindo",
+        "product_image": "product_image-1608233937830.jpg",
+        "stock": 0
+    }
+]
